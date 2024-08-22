@@ -8,7 +8,6 @@ public class Card
     public string name;
     public string attribute;
     public int point;
-    public string effect;
     public GameObject card_prefab;
 }
 
