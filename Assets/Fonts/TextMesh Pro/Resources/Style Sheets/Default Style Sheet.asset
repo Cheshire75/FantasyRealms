@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: Default Style Sheet
   m_EditorClassIdentifier: 
   m_StyleList:
-  - m_Name: Effect
-    m_HashCode: -1670597097
+  - m_Name: Point
+    m_HashCode: 93031276
     m_OpeningDefinition: 
     m_ClosingDefinition: 
     m_OpeningTagArray: 
     m_ClosingTagArray: 
     m_OpeningTagUnicodeArray: 
     m_ClosingTagUnicodeArray: 
-  - m_Name: Point
-    m_HashCode: 93031276
+  - m_Name: Effect
+    m_HashCode: -1670597097
     m_OpeningDefinition: 
     m_ClosingDefinition: 
     m_OpeningTagArray: 
@@ -35,7 +35,7 @@ MonoBehaviour:
     m_ClosingDefinition: </b></color>
     m_OpeningTagArray: 3c000000630000006f0000006c0000006f000000720000003d000000230000003000000061000000300000006100000030000000610000003e0000003c000000620000003e000000
     m_ClosingTagArray: 3c0000002f000000620000003e0000003c0000002f000000630000006f0000006c0000006f000000720000003e000000
-    m_OpeningTagUnicodeArray: 3c000000630000006f0000006c0000006f000000720000003d000000230000003100000037000000310000003700000031000000370000003e0000003c000000620000003e000000
+    m_OpeningTagUnicodeArray: 3c000000630000006f0000006c0000006f000000720000003d000000230000003000000061000000300000006100000030000000610000003e0000003c000000620000003e000000
     m_ClosingTagUnicodeArray: 3c0000002f000000620000003e0000003c0000002f000000630000006f0000006c0000006f000000720000003e000000
   - m_Name: Leader
     m_HashCode: -1397933349
@@ -55,6 +55,62 @@ MonoBehaviour:
     m_ClosingTagUnicodeArray: 
   - m_Name: Weather
     m_HashCode: -1223120808
+    m_OpeningDefinition: <color=#b2bfdb><b>
+    m_ClosingDefinition: </b></color>
+    m_OpeningTagArray: 3c000000630000006f0000006c0000006f000000720000003d000000230000006200000032000000620000006600000064000000620000003e0000003c000000620000003e000000
+    m_ClosingTagArray: 3c0000002f000000620000003e0000003c0000002f000000630000006f0000006c0000006f000000720000003e000000
+    m_OpeningTagUnicodeArray: 3c000000630000006f0000006c0000006f000000720000003d000000230000006200000032000000620000006600000064000000620000003e0000003c000000620000003e000000
+    m_ClosingTagUnicodeArray: 3c0000002f000000620000003e0000003c0000002f000000630000006f0000006c0000006f000000720000003e000000
+  - m_Name: Magician
+    m_HashCode: 300752519
+    m_OpeningDefinition: 
+    m_ClosingDefinition: 
+    m_OpeningTagArray: 
+    m_ClosingTagArray: 
+    m_OpeningTagUnicodeArray: 
+    m_ClosingTagUnicodeArray: 
+  - m_Name: Weapon
+    m_HashCode: -817971742
+    m_OpeningDefinition: 
+    m_ClosingDefinition: 
+    m_OpeningTagArray: 
+    m_ClosingTagArray: 
+    m_OpeningTagUnicodeArray: 
+    m_ClosingTagUnicodeArray: 
+  - m_Name: Water
+    m_HashCode: 105489301
+    m_OpeningDefinition: 
+    m_ClosingDefinition: 
+    m_OpeningTagArray: 
+    m_ClosingTagArray: 
+    m_OpeningTagUnicodeArray: 
+    m_ClosingTagUnicodeArray: 
+  - m_Name: Fire
+    m_HashCode: 2597720
+    m_OpeningDefinition: 
+    m_ClosingDefinition: 
+    m_OpeningTagArray: 
+    m_ClosingTagArray: 
+    m_OpeningTagUnicodeArray: 
+    m_ClosingTagUnicodeArray: 
+  - m_Name: Unknown
+    m_HashCode: 191717096
+    m_OpeningDefinition: 
+    m_ClosingDefinition: 
+    m_OpeningTagArray: 
+    m_ClosingTagArray: 
+    m_OpeningTagUnicodeArray: 
+    m_ClosingTagUnicodeArray: 
+  - m_Name: Beast
+    m_HashCode: 80821697
+    m_OpeningDefinition: 
+    m_ClosingDefinition: 
+    m_OpeningTagArray: 
+    m_ClosingTagArray: 
+    m_OpeningTagUnicodeArray: 
+    m_ClosingTagUnicodeArray: 
+  - m_Name: Artifact
+    m_HashCode: -1506809698
     m_OpeningDefinition: 
     m_ClosingDefinition: 
     m_OpeningTagArray: 
@@ -69,3 +125,11 @@ MonoBehaviour:
     m_ClosingTagArray: 
     m_OpeningTagUnicodeArray: 
     m_ClosingTagUnicodeArray: 
+  - m_Name: BlackFont
+    m_HashCode: 1085456628
+    m_OpeningDefinition: <color=#4f4f4f>
+    m_ClosingDefinition: </color>
+    m_OpeningTagArray: 3c000000630000006f0000006c0000006f000000720000003d000000230000003400000066000000340000006600000034000000660000003e000000
+    m_ClosingTagArray: 3c0000002f000000630000006f0000006c0000006f000000720000003e000000
+    m_OpeningTagUnicodeArray: 3c000000630000006f0000006c0000006f000000720000003d000000230000003400000066000000340000006600000034000000660000003e000000
+    m_ClosingTagUnicodeArray: 3c0000002f000000630000006f0000006c0000006f000000720000003e000000

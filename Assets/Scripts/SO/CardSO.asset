@@ -33,3 +33,23 @@ MonoBehaviour:
     attribute: Army
     point: 5
     card_prefab: {fileID: 4602584797866727604, guid: bd9ae9b2c8039dc42bbed31c0b04cb33, type: 3}
+  - name: AirElemental
+    attribute: Weather
+    point: 4
+    card_prefab: {fileID: 1684535624936684176, guid: 706413cb65f1cfd4a9b26cb142a40a93, type: 3}
+  - name: Blizzard
+    attribute: Weather
+    point: 30
+    card_prefab: {fileID: 5031650231585857629, guid: c9c097ccc99f5cf4ca1b2b748d90dc82, type: 3}
+  - name: Rainstorm
+    attribute: Weather
+    point: 8
+    card_prefab: {fileID: 5176769781365319529, guid: b796148becdd0ba46836de044d56c451, type: 3}
+  - name: Smoke
+    attribute: Weather
+    point: 27
+    card_prefab: {fileID: 4404009608344800905, guid: 595465f115818d44ca62a3cd09fd28ec, type: 3}
+  - name: Whirlwind
+    attribute: Weather
+    point: 13
+    card_prefab: {fileID: 3322433128738547202, guid: 033a15736ac67344283506054be34f6b, type: 3}
