@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4598956033094226650
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 740807019246016843, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+      propertyPath: m_text
+      value: "\uB2E4\uB978 <style=\"Water\">\uBB3C</style> 1\uC7A5\uB2F9 +15"
+      objectReference: {fileID: 0}
+    - target: {fileID: 740807019246016843, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: 1085456628
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005048635323687918, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+      propertyPath: m_text
+      value: "\uBB3C\uC758 \uC815\uB839"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005048635323687918, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: 1085456628
+      objectReference: {fileID: 0}
+    - target: {fileID: 1221422777314492709, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 06e1a435cc4ccfa4589599fd3bb98d49, type: 3}
+    - target: {fileID: 4977227469810872622, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977227469810872622, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977227469810872622, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977227469810872622, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977227469810872622, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977227469810872622, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977227469810872622, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977227469810872622, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977227469810872622, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977227469810872622, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6067287341988010771, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+      propertyPath: m_text
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528850961538468211, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8f21c2a6ebee7124d85b3882f977a4c5, type: 3}
+    - target: {fileID: 8529293505268405376, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+      propertyPath: m_Name
+      value: WaterElemental Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}

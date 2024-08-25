@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7440890180468064952
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2996343975542568260, guid: 8a0ddb37ca3d7f94a9f6d98d4c1b5f77, type: 3}
+      propertyPath: m_text
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243645391722690194, guid: 8a0ddb37ca3d7f94a9f6d98d4c1b5f77, type: 3}
+      propertyPath: m_Name
+      value: Candle Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4858070891938741694, guid: 8a0ddb37ca3d7f94a9f6d98d4c1b5f77, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 4858070891938741694, guid: 8a0ddb37ca3d7f94a9f6d98d4c1b5f77, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4858070891938741694, guid: 8a0ddb37ca3d7f94a9f6d98d4c1b5f77, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4858070891938741694, guid: 8a0ddb37ca3d7f94a9f6d98d4c1b5f77, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4858070891938741694, guid: 8a0ddb37ca3d7f94a9f6d98d4c1b5f77, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4858070891938741694, guid: 8a0ddb37ca3d7f94a9f6d98d4c1b5f77, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4858070891938741694, guid: 8a0ddb37ca3d7f94a9f6d98d4c1b5f77, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4858070891938741694, guid: 8a0ddb37ca3d7f94a9f6d98d4c1b5f77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4858070891938741694, guid: 8a0ddb37ca3d7f94a9f6d98d4c1b5f77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4858070891938741694, guid: 8a0ddb37ca3d7f94a9f6d98d4c1b5f77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211758745283608676, guid: 8a0ddb37ca3d7f94a9f6d98d4c1b5f77, type: 3}
+      propertyPath: m_text
+      value: "\uC591\uCD08"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8173354819561446513, guid: 8a0ddb37ca3d7f94a9f6d98d4c1b5f77, type: 3}
+      propertyPath: m_text
+      value: "<style=\"Artifact\">\uBCC0\uD654\uC758 \uCC45</style>\uACFC <style=\"Earth\">\uC885\uD0D1</style>\uC774
+        \n\uBAA8\uB450 \uC788\uACE0, <style=\"Magician\">\uB9C8\uBC95\uC0AC</style>\uAC00
+        \n\uD558\uB098\uB77C\uB3C4 \uC788\uC73C\uBA74 +100"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8173354819561446513, guid: 8a0ddb37ca3d7f94a9f6d98d4c1b5f77, type: 3}
+      propertyPath: m_fontSize
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8173354819561446513, guid: 8a0ddb37ca3d7f94a9f6d98d4c1b5f77, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9121895681341325619, guid: 8a0ddb37ca3d7f94a9f6d98d4c1b5f77, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1a870d796584ca54eb98b6f835d61291, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8a0ddb37ca3d7f94a9f6d98d4c1b5f77, type: 3}
