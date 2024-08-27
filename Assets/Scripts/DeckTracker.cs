@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DeckTracker : MonoBehaviour
@@ -9,7 +10,7 @@ public class DeckTracker : MonoBehaviour
 
     [SerializeField] CardSO cardSO;
     List<Card> deck;
-
+    [SerializeField] Hand hand;
 
     // Start is called before the first frame update
     void Start()
@@ -31,15 +32,30 @@ public class DeckTracker : MonoBehaviour
 
     public Card drawCard()
     {
-        if (deck.Count > 0)
+        Card tmp = deck[0];
+        deck.RemoveAt(0);
+        return tmp;
+    }
+
+    public void setUp(Hand hand)
+    {
+        for (int i = 0; i < 7; i++)
         {
-            Card tmp = deck[0];
-            deck.RemoveAt(0);
-            return tmp;
+            hand.myCards[i] = drawCard();
         }
-        else
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            return null;
+            setUp(hand);
+            for (int i = 0; i < 7; i++)
+            {
+                hand.spread.Add(Instantiate(hand.myCards[i].card_prefab));
+                hand.spread[i].transform.SetParent(hand.transform);
+                hand.spread[i].transform.position = new Vector2(-7 + 2 * i, -3.3f);
+            }
         }
     }
 }
