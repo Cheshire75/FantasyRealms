@@ -1,0 +1,101 @@
+덱, 핸드, 필드
+카드를 내보낸다.
+카드를 추가?
+컨테이너가 필요하다.
+
+class abstract object
+container
+void receive(card){
+컨테이너에 입력받은 카드를 추가
+ex: 핸드로 카드를 가져온다. 필드에서 버려진 카드를 받는다. 새로운 게임을 위해 덱에 모든 카드를 새로 추가한다.
+}
+card send(int){
+컨테이너에서 int번째 카드를 내보낸다.
+return card
+ex. 핸드에서 필드로 카드를 버린다. 덱에서 플레이어에게 보낼 카드를 내보낸다. 필드에 버려진 카드 중에서 플레이어에게 선택된 카드를 보내준다.
+
+void clear(){
+컨테이너에 담긴 모든 카드들을 폐기한다.
+ex. 게임을 새로 시작할때 먼저 컨테이너에 담긴 모든 카드들을 폐기하고 새로운 카드를 받을 준비를 한다.
+}
+
+
+
+class 덱 : object
+{
+container[numOfAllCards]
+
+void suffle()
+clear로 컨테이너를 모두 비우고 새롭게 카드들을 덱에 무작위 순서대로 추가한다.
+}
+
+
+class 필드 : object
+{
+container[10]
+
+bool isFull()
+필드에 버려진 카드들의 수를 확인하고 게임이 끝났으면 true를 반환한다.
+true or false
+
+void showUp()
+컨테이너에 포함된 카드들로 필드에 표시된 카드들을 새로고침한다.
+}
+
+
+class 핸드
+{
+container[8]
+int score
+int playerNumber
+
+void countScore()
+컨테이너에 담겨있는 카드들의 점수계산 함수를 실행시키고 반환된 점수들을 계산한다.
+
+void spread(playerNumber){
+playerNumber와 플레이어의 번호가 동일하다면 카드를 앞면으로 표시하고 동일하지 않다면 뒷면으로 표시해준다. 새로고침
+}
+
+class card{
+int power
+string name
+string attrib
+int order
+bool isAvailable
+bool isPenalty
+abstract int scoring()
+
+
+bool isThereAttrib(hand, attrib)
+//~가 하나도 없으면
+//~가 하나
+gameObject에서 attrib에 해당하는 card가 있는지 확인하고 bool 반환
+true or false
+
+boll isThereName(hand, name)
+컨테이너에 포함된 카드들 중 name과 동일한 카드가 있는지 확인하고 bool 반환
+
+int eachAttrib(hand, attrib)
+//~ 1장당
+gameObject에서 attrib에 해당하는 card가 있는지 확인하고 확인된 카드의 개수를 반환
+return numberOfAttrib
+
+void exclude(hand, attrib)
+//모든 카드의 패널티에서 ~를 제거
+hand의 컨테이너에 존재하는 모든 카드들의 attrib을 패널티 계산 전에 null로 변경하여 예외처리시킨다.
+
+void unavailableAttrib(hand, attrib)
+//모든 attrib 무효
+attrib가 일치하는 카드들의 isAvailable을 false로 전환시킨다.
+
+void availableName(hand, name)
+//모든 카드 무효에서 name 카드 예외처리
+name이 일치하는 카드들의 isAvailable을 true로 전환시킨다.
+
+void deletePenalty(hand, attrib)
+//모든 ~의 패널티 제거
+attrib가 일치하는 카드들의 isPenalty를 false로 전환시킨다.
+
+void copy(card)
+선택한 카드의 속성과 이름을 복사해옴
+}
