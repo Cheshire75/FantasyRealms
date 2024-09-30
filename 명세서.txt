@@ -57,45 +57,102 @@ playerNumber와 플레이어의 번호가 동일하다면 카드를 앞면으로
 }
 
 class card{
-int power
-string name
-string attrib
-int order
-bool isAvailable
-bool isPenalty
-abstract int scoring()
+abstract public class Card
+{
+    public string name;
+    public string attribute;
+    public int point;
+    public int order;
+    public bool isAvailable;
+    public bool isPenalty;
+    abstract public int scoring();
+    public Hand hand;
 
+    protected bool isThereAttrib(string _attrib)
+    //hand에 _attrib 속성이 있는지 확인
+    {
+        foreach (var i in hand.myCards)
+        {
+            if (i.attribute == _attrib)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 
-bool isThereAttrib(hand, attrib)
-//~가 하나도 없으면
-//~가 하나
-gameObject에서 attrib에 해당하는 card가 있는지 확인하고 bool 반환
-true or false
+    protected bool isThereName(string _name)
+    //hand에 _name이 있는지 확인
+    {
+        foreach (var i in hand.myCards)
+        {
+            if (i.name == _name)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 
-boll isThereName(hand, name)
-컨테이너에 포함된 카드들 중 name과 동일한 카드가 있는지 확인하고 bool 반환
+    protected int eachAttrib(string _attrib)
+    //hand에 포함된 _attrib 수를 확인
+    {
+        int cnt = 0;
+        foreach (var i in hand.myCards)
+        {
+            if (i.attribute == _attrib)
+            {
+                cnt++;
+            }
+        }
+        return cnt;
+    }
 
-int eachAttrib(hand, attrib)
-//~ 1장당
-gameObject에서 attrib에 해당하는 card가 있는지 확인하고 확인된 카드의 개수를 반환
-return numberOfAttrib
+    protected void exclude(string _attrib)
+    //_attrib와 동일한 속성을 가진 카드들의 isAvailable를 false로 전환
+    {
+        foreach (var i in hand.myCards)
+        {
+            if (i.attribute == _attrib)
+            {
+                i.attribute = "";
+            }
+        }
+    }
 
-void exclude(hand, attrib)
-//모든 카드의 패널티에서 ~를 제거
-hand의 컨테이너에 존재하는 모든 카드들의 attrib을 패널티 계산 전에 null로 변경하여 예외처리시킨다.
+    protected void unavailableAttrib(string _attrib)
+    {
+        foreach (var i in hand.myCards)
+        {
+            if (i.attribute == _attrib)
+            {
+                i.isAvailable = false;
+            }
+        }
+    }
 
-void unavailableAttrib(hand, attrib)
-//모든 attrib 무효
-attrib가 일치하는 카드들의 isAvailable을 false로 전환시킨다.
+    protected void availableName(string _name)
+    {
+        foreach (var i in hand.myCards)
+        {
+            if (i.name == _name)
+            {
+                i.isAvailable = true;
+            }
+        }
+    }
 
-void availableName(hand, name)
-//모든 카드 무효에서 name 카드 예외처리
-name이 일치하는 카드들의 isAvailable을 true로 전환시킨다.
-
-void deletePenalty(hand, attrib)
-//모든 ~의 패널티 제거
-attrib가 일치하는 카드들의 isPenalty를 false로 전환시킨다.
-
+    protected void deletePenalty(string _attrib)
+    {
+        foreach (var i in hand.myCards)
+        {
+            if (i.attribute == _attrib)
+            {
+                i.isPenalty = false;
+            }
+        }
+    }
+}
 void copy(card)
 선택한 카드의 속성과 이름을 복사해옴
 }

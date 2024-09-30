@@ -2,21 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hand : Container
+public class Deck : Container
 {
     [SerializeField]
-    public Deck deck;
-    public int score;
-    public int playerNumber;
-    public Hand()
+    public CardSO cardSO;
+    public Deck()
     {
         container = new List<GameObject>();
     }
-    public void draw()
+    public void setup()
     {
-        if (container.Count < 7)
+        clear();
+        foreach (var i in cardSO.AllCards)
         {
-
+            container.Add(i);
         }
     }
 }

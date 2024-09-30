@@ -224,7 +224,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 784415533}
-  - component: {fileID: 784415532}
   - component: {fileID: 784415534}
   m_Layer: 6
   m_Name: Hand
@@ -233,48 +232,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &784415532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 784415531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a35c83cef18cf2428bb42607d04129b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myCards:
-  - name: 
-    attribute: 
-    point: 0
-    card_prefab: {fileID: 0}
-  - name: 
-    attribute: 
-    point: 0
-    card_prefab: {fileID: 0}
-  - name: 
-    attribute: 
-    point: 0
-    card_prefab: {fileID: 0}
-  - name: 
-    attribute: 
-    point: 0
-    card_prefab: {fileID: 0}
-  - name: 
-    attribute: 
-    point: 0
-    card_prefab: {fileID: 0}
-  - name: 
-    attribute: 
-    point: 0
-    card_prefab: {fileID: 0}
-  - name: 
-    attribute: 
-    point: 0
-    card_prefab: {fileID: 0}
-  spread: []
 --- !u!4 &784415533
 Transform:
   m_ObjectHideFlags: 0
@@ -512,7 +469,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2011947471}
-  - component: {fileID: 2011947472}
   m_Layer: 6
   m_Name: Deck
   m_TagString: Untagged
@@ -536,20 +492,6 @@ Transform:
   - {fileID: 1815641004}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2011947472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2011947470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db716385e3bc7af46b75849b5c2e9141, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cardSO: {fileID: 11400000, guid: cb93050f034d02c4dace82da5eacea3e, type: 2}
-  hand: {fileID: 784415532}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
