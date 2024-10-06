@@ -2,17 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Arcmage : MonoBehaviour
+public class Arcmage : Card
 {
-    // Start is called before the first frame update
-    void Start()
+    public Arcmage()
     {
-        
+        cardName = "Arcmage";
+        attrib = "Wizard";
+        power = 25;
+        order = 10;
+        isAvailable = true;
+        isPenalty = true;
     }
-
-    // Update is called once per frame
-    void Update()
+    public override int scroing()
     {
-        
+        power -= (eachAttrib("Leader")) * -10;
+        power -= (eachAttrib("Wizard") - 1) * -10;
+        return power;
     }
 }

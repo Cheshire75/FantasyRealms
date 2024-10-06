@@ -27,7 +27,10 @@ public class Hand : Container
 
     public void draw()
     {
-        receive(deck.send(Random.Range(0, deck.container.Count - 1)));
+        Card tmp = deck.send(Random.Range(0, deck.container.Count - 1));
+        tmp.hand = this;
+        tmp.prefab = Resources.Load<GameObject>("Prefabs/" + tmp.cardName);
+        receive(tmp);
     }
 
     public void discard(int num)
