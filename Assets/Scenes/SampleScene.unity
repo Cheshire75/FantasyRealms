@@ -225,6 +225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 784415533}
   - component: {fileID: 784415534}
+  - component: {fileID: 784415535}
   m_Layer: 6
   m_Name: Hand
   m_TagString: Untagged
@@ -292,6 +293,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 17.419891, y: 2.8833506}
   m_EdgeRadius: 0
+--- !u!114 &784415535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784415531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07574b4654c2fdf4c97947e670a474b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  container: []
+  deck: {fileID: 2011947472}
+  score: 0
+  playerNumber: 0
+  field: {fileID: 983871540}
 --- !u!1 &983871537
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,8 +320,9 @@ GameObject:
   m_Component:
   - component: {fileID: 983871539}
   - component: {fileID: 983871538}
+  - component: {fileID: 983871540}
   m_Layer: 3
-  m_Name: background
+  m_Name: Field
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -376,6 +395,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &983871540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983871537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7210cd06ac252a344ad4026320454c7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  container: []
 --- !u!1 &1815641003
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,6 +501,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2011947471}
+  - component: {fileID: 2011947472}
   m_Layer: 6
   m_Name: Deck
   m_TagString: Untagged
@@ -492,6 +525,20 @@ Transform:
   - {fileID: 1815641004}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2011947472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011947470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ccce643272a8314abcf5a67bf5fe9a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  container: []
+  cardSO: {fileID: 11400000, guid: e3f467f2a8a1c954982e79153c12a321, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

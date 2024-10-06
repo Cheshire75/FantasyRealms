@@ -8,7 +8,7 @@ public class Deck : Container
     public CardSO cardSO;
     public Deck()
     {
-        container = new List<GameObject>();
+        container = new List<Card>();
     }
     public void setup()
     {
@@ -17,5 +17,9 @@ public class Deck : Container
         {
             container.Add(i);
         }
+    }
+    void Awake()
+    {
+        setup();
     }
 }

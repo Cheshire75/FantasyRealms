@@ -6,5 +6,5 @@ using UnityEngine;
 public class CardSO : ScriptableObject
 {
     [SerializeField]
-    public GameObject[] AllCards = new GameObject[55];
+    public Card[] AllCards = new Card[55];
 }

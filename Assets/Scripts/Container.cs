@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Container : MonoBehaviour
 {
-    public List<GameObject> container;
-    public void receive(GameObject card)
+    public List<Card> container;
+    public void receive(Card card)
     {
         container.Add(card);
     }
-    public GameObject send(int num)
+    public Card send(int num)
     {
-        GameObject tmp = container[num];
+        Card tmp = container[num];
         container.RemoveAt(num);
         return tmp;
     }
