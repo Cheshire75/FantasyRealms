@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4849792173335755812}
   m_Layer: 6
-  m_Name: DwafFootmen
+  m_Name: DwarfFootmen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

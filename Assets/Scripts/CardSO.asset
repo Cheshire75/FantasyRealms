@@ -13,58 +13,443 @@ MonoBehaviour:
   m_Name: CardSO
   m_EditorClassIdentifier: 
   AllCards:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - cardName: AirElemental
+    attrib: Weather
+    power: 4
+    order: 10
+    isAvailable: 1
+    isPenalty: 0
+    prefab: {fileID: 1684535624936684176, guid: 706413cb65f1cfd4a9b26cb142a40a93, type: 3}
+    hand: {fileID: 0}
+  - cardName: Arcmage
+    attrib: Wizard
+    power: 25
+    order: 10
+    isAvailable: 1
+    isPenalty: 1
+    prefab: {fileID: 6637338300403489019, guid: 42007ac2df58dde46ad0bbed1386a78f, type: 3}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
+  - cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}

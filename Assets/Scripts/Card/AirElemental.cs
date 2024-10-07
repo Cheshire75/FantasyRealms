@@ -2,20 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AirElemental : Card
+public class AirElemental : Effect
 {
-    public AirElemental()
+    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
     {
-        cardName = "AirElemental";
-        attrib = "Weather";
-        power = 4;
-        order = 10;
-        isAvailable = true;
-        isPenalty = false;
-    }
-    public override int scroing()
-    {
-        power -= (eachAttrib("Weather") - 1) * 15;
-        return power;
+        int bonus = 0;
+        if (isAvailable)
+        {
+            bonus += (eachAttrib(hand, "Weather") - 1) * 15;
+            return bonus + power;
+        }
+        return 0;
     }
 }

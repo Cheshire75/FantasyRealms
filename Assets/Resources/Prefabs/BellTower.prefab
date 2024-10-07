@@ -83,10 +83,30 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: b63bac5ddbc8546448f1481777eceedf, type: 3}
     - target: {fileID: 8529293505268405376, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
       propertyPath: m_Name
-      value: BellTower Variant
+      value: BellTower
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8529293505268405376, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -2774543599711225429}
   m_SourcePrefab: {fileID: 100100000, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+--- !u!1 &1482034224376015448 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8529293505268405376, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+  m_PrefabInstance: {fileID: 7119941451235376856}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-2774543599711225429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482034224376015448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 992ab5f7e9188484a8a7d460502b7edd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
