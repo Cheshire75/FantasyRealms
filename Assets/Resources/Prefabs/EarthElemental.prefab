@@ -94,10 +94,30 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 35a32d495f95cb443bee6197208e01de, type: 3}
     - target: {fileID: 8529293505268405376, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
       propertyPath: m_Name
-      value: EarthElemental Variant
+      value: EarthElemental
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8529293505268405376, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5554861185833195849}
   m_SourcePrefab: {fileID: 100100000, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+--- !u!1 &6489900325775354435 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8529293505268405376, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+  m_PrefabInstance: {fileID: 3192738459967684291}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5554861185833195849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6489900325775354435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26061eac4e04dd448b8b7648f2dba869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
