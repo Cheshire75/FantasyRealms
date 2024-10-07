@@ -180,6 +180,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7406791774854274882}
+  - component: {fileID: 2091582558317504796}
   m_Layer: 6
   m_Name: AirElemental
   m_TagString: Untagged
@@ -207,6 +208,27 @@ Transform:
   - {fileID: 3372331804278617213}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2091582558317504796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684535624936684176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ce23f44942edc541b3f47503d1f9d0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_card:
+    cardName: 
+    attrib: 
+    power: 0
+    order: 0
+    isAvailable: 0
+    isPenalty: 0
+    prefab: {fileID: 0}
+    hand: {fileID: 0}
 --- !u!1 &2659530159149739261
 GameObject:
   m_ObjectHideFlags: 0

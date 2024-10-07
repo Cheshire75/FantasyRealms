@@ -87,10 +87,30 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 1ab1f162baa196740a57a0cd05779f12, type: 3}
     - target: {fileID: 8529293505268405376, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
       propertyPath: m_Name
-      value: Arcmage Variant
+      value: Arcmage
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8529293505268405376, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1600632064675119294}
   m_SourcePrefab: {fileID: 100100000, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+--- !u!1 &6637338300403489019 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8529293505268405376, guid: d1690f8cebc73f547ab6b361f501cf67, type: 3}
+  m_PrefabInstance: {fileID: 3045193403218578555}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-1600632064675119294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6637338300403489019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e250d3fcab5112044bd0207f4f8bc25f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

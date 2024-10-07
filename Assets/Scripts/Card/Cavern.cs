@@ -2,23 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Arcmage : Effect
+public class Cavern : Effect
 {
     public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
     {
+        int bonus = 0;
         if (isAvailable)
         {
-            int bonus = 0;
-            if (isPenalty)
+            if (isThereName(hand, "DwarfFootmen") || isThereName(hand, "Dragon"))
             {
-                bonus -= eachAttrib(hand, "Leader") * -10;
-                bonus -= (eachAttrib(hand, "Wizard") - 1) * -10;
+                bonus = 25;
             }
+            deletePenalty(hand, "Weather");
             return bonus + power;
         }
-        else
-        {
-            return 0;
-        }
+        return 0;
     }
 }
