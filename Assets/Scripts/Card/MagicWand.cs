@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightCavalry : Effect
+public class MagicWand : Effect
 {
     public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
     {
         int bonus = 0;
         if (isAvailable)
         {
-            if (isPenalty)
+            if (isThereAttrib(hand, "Wizard"))
             {
-                bonus -= eachAttrib(hand, "Earth") * 2;
+                bonus = 25;
             }
             return bonus + power;
         }

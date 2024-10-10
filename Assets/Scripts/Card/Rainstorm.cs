@@ -2,16 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightCavalry : Effect
+public class Rainstorm : Effect
 {
     public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
     {
         int bonus = 0;
         if (isAvailable)
         {
+            bonus += eachAttrib(hand, "Water") * 10;
             if (isPenalty)
             {
-                bonus -= eachAttrib(hand, "Earth") * 2;
+                unavailableAttrib(hand, "Fire");
+                availableName(hand, "Lightning");
             }
             return bonus + power;
         }

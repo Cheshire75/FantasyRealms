@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightCavalry : Effect
+public class Swamp : Effect
 {
     public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
     {
@@ -11,9 +11,9 @@ public class LightCavalry : Effect
         {
             if (isPenalty)
             {
-                bonus -= eachAttrib(hand, "Earth") * 2;
+                bonus -= eachAttrib(hand, "Army") * 3;
+                bonus -= eachAttrib(hand, "Fire") * 3;
             }
-            return bonus + power;
         }
         return 0;
     }

@@ -2,18 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightCavalry : Effect
+public class ShieldOfKeth : Effect
 {
     public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
     {
         int bonus = 0;
         if (isAvailable)
         {
-            if (isPenalty)
+            if (isThereAttrib(hand, "Leader"))
             {
-                bonus -= eachAttrib(hand, "Earth") * 2;
+                bonus = 15;
             }
-            return bonus + power;
+            if (isThereAttrib(hand, "Leader") && isThereName(hand, "SwordOfKeth"))
+            {
+                bonus = 40;
+            }
         }
         return 0;
     }

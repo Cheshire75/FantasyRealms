@@ -2,18 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightCavalry : Effect
+public class Warhorse : Effect
 {
     public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
     {
         int bonus = 0;
         if (isAvailable)
         {
-            if (isPenalty)
+            if (isThereAttrib(hand, "Leader") || isThereAttrib(hand, "Wizard"))
             {
-                bonus -= eachAttrib(hand, "Earth") * 2;
+                bonus = 14;
             }
-            return bonus + power;
+            return power + bonus;
         }
         return 0;
     }

@@ -2,16 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightCavalry : Effect
+public class Whirlwind : Effect
 {
     public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
     {
         int bonus = 0;
         if (isAvailable)
         {
-            if (isPenalty)
+            if (isThereName(hand, "Rainstorm"))
             {
-                bonus -= eachAttrib(hand, "Earth") * 2;
+                if (isThereName(hand, "Blizzard") || isThereName(hand, "GreatFlood"))
+                {
+                    bonus = 40;
+                }
             }
             return bonus + power;
         }

@@ -11,8 +11,9 @@ public class Effect : MonoBehaviour
     {
         foreach (var i in hand.container)
         {
-            if (i.attrib == _attrib)
+            if (i.attrib == _attrib && i.isAvailable)
             {
+
                 return true;
             }
         }
@@ -23,7 +24,7 @@ public class Effect : MonoBehaviour
     {
         foreach (var i in hand.container)
         {
-            if (i.cardName == _name)
+            if (i.cardName == _name && i.isAvailable)
             {
                 return true;
             }
@@ -36,7 +37,7 @@ public class Effect : MonoBehaviour
         int cnt = 0;
         foreach (var i in hand.container)
         {
-            if (i.attrib == _attrib)
+            if (i.attrib == _attrib && i.isAvailable)
             {
                 cnt++;
             }
@@ -51,6 +52,17 @@ public class Effect : MonoBehaviour
             if (i.attrib == _attrib)
             {
                 i.attrib = "";
+            }
+        }
+    }
+
+    protected void include(Hand hand, string _attrib)
+    {
+        foreach (var i in hand.container)
+        {
+            if (i.attrib == "")
+            {
+                i.attrib = _attrib;
             }
         }
     }
