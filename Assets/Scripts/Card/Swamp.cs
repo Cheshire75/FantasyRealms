@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Swamp : Effect
 {
-    [SerializeField]
-    public List<string> penaltyAttrib = new List<string>();
     void Start()
     {
         penaltyAttrib.Add("Army");
