@@ -1,19 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DwarfFootmen : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public List<string> penaltyAttrib = new List<string>();
+    void Start()
+    {
+        penaltyAttrib.Add("Army");
+    }
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            if (isPenalty)
+            if (card.isPenalty)
             {
-                bonus -= (eachAttrib(hand, "Army") - 1) * -2;
+                int cnt = eachAttrib(card.hand, penaltyAttrib[0]);
+                if (card.attrib == "Army") cnt--;
+                bonus += cnt * -2;
             }
-            return bonus + power;
+            return bonus + card.power;
         }
         return 0;
     }

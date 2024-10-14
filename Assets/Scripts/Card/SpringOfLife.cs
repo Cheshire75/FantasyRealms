@@ -11,6 +11,7 @@ public class SpringOfLife : Effect
         if (card.attrib == "Fire") return true;
         if (card.attrib == "Earth") return true;
         if (card.attrib == "Weather") return true;
+        return false;
     }
     public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
     {

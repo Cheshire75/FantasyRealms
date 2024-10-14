@@ -4,21 +4,20 @@ using UnityEngine;
 
 public class Arcmage : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
-        if (isAvailable)
+        if (card.isAvailable)
         {
             int bonus = 0;
-            if (isPenalty)
+            if (card.isPenalty)
             {
-                bonus -= eachAttrib(hand, "Leader") * -10;
-                bonus -= (eachAttrib(hand, "Wizard") - 1) * -10;
+                int cnt = eachAttrib(card.hand, "Leader") + eachAttrib(card.hand, "Wizard");
+                if (card.attrib == "Leader" || card.attrib == "Wizard") cnt--;
+
+                bonus -= cnt * 10;
             }
-            return bonus + power;
+            return bonus + card.power;
         }
-        else
-        {
-            return 0;
-        }
+        return 0;
     }
 }

@@ -6,7 +6,6 @@ public class Wildfire : Effect
 {
     public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
     {
-        int bonus = 0;
         if (isAvailable)
         {
             unavailableAttrib(hand, "Army");

@@ -5,21 +5,21 @@ using UnityEngine;
 
 public class Collector : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
-        if (isAvailable)
+        if (card.isAvailable)
         {
             List<int> numOfAttrib = new List<int>();
-            numOfAttrib.Add(eachAttrib(hand, "Army"));
-            numOfAttrib.Add(eachAttrib(hand, "Weather"));
-            numOfAttrib.Add(eachAttrib(hand, "Earth"));
-            numOfAttrib.Add(eachAttrib(hand, "Wizard"));
-            numOfAttrib.Add(eachAttrib(hand, "Weapon"));
-            numOfAttrib.Add(eachAttrib(hand, "Water"));
-            numOfAttrib.Add(eachAttrib(hand, "Fire"));
-            numOfAttrib.Add(eachAttrib(hand, "Beast"));
-            numOfAttrib.Add(eachAttrib(hand, "Artifact"));
-            numOfAttrib.Add(eachAttrib(hand, "Leader"));
+            numOfAttrib.Add(eachAttrib(card.hand, "Army"));
+            numOfAttrib.Add(eachAttrib(card.hand, "Weather"));
+            numOfAttrib.Add(eachAttrib(card.hand, "Earth"));
+            numOfAttrib.Add(eachAttrib(card.hand, "Wizard"));
+            numOfAttrib.Add(eachAttrib(card.hand, "Weapon"));
+            numOfAttrib.Add(eachAttrib(card.hand, "Water"));
+            numOfAttrib.Add(eachAttrib(card.hand, "Fire"));
+            numOfAttrib.Add(eachAttrib(card.hand, "Beast"));
+            numOfAttrib.Add(eachAttrib(card.hand, "Artifact"));
+            numOfAttrib.Add(eachAttrib(card.hand, "Leader"));
             int maxNumOfAttrib = numOfAttrib.Max();
 
             int bonus = 0;
@@ -38,7 +38,7 @@ public class Collector : Effect
                         break;
                 }
             }
-            return bonus + power;
+            return bonus + card.power;
         }
         return 0;
     }

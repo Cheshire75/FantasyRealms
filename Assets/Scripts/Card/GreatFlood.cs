@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class GreatFlood : Effect
 {
+    [SerializeField]
+    public List<string> penaltyAttrib = new List<string>();
+    void Start()
+    {
+        penaltyAttrib.Add("Army");
+        penaltyAttrib.Add("Earth");
+        penaltyAttrib.Add("Fire");
+    }
     public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
     {
-        int bonus = 0;
         if (isAvailable)
         {
-            unavailableAttrib(hand, "Army");
-            unavailableAttrib(hand, "Earth");
+            foreach (var i in penaltyAttrib)
+            {
+                unavailableAttrib(hand, i);
+            }
+
             availableName(hand, "Mountain");
-            unavailableAttrib(hand, "Fire");
             availableName(hand, "Lightning");
             return power;
         }

@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class Dragon : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            if (isPenalty)
+            if (card.isPenalty)
             {
-                if (!isThereAttrib(hand, "Wizard"))
+                if (!isThereAttrib(card.hand, "Wizard"))
                 {
                     bonus = -40;
                 }
             }
-            return bonus + power;
+            return bonus + card.power;
         }
         return 0;
     }

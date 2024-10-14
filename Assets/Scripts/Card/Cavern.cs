@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class Cavern : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            if (isThereName(hand, "DwarfFootmen") || isThereName(hand, "Dragon"))
+            if (isThereName(card.hand, "DwarfFootmen") || isThereName(card.hand, "Dragon"))
             {
                 bonus = 25;
             }
-            deletePenalty(hand, "Weather");
-            return bonus + power;
+            deletePenalty(card.hand, "Weather");
+            return bonus + card.power;
         }
         return 0;
     }

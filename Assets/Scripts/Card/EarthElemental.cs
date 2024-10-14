@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class EarthElemental : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            bonus += (eachAttrib(hand, "Earth") - 1) * 15;
-            return bonus + power;
+            int cnt = eachAttrib(card.hand, "Earth");
+            if (card.attrib == "Earth") cnt--;
+            bonus += cnt * 15;
+            return bonus + card.power;
         }
         return 0;
     }

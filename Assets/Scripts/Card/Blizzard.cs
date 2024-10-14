@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class Blizzard : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            bonus += eachAttrib(hand, "Water") * 10;
-            if (isPenalty)
+            bonus += eachAttrib(card.hand, "Water") * 10;
+            if (card.isPenalty)
             {
-                unavailableAttrib(hand, "Fire");
-                availableName(hand, "Lightning");
+                unavailableAttrib(card.hand, "Fire");
+                availableName(card.hand, "Lightning");
             }
-            return bonus + power;
+            return bonus + card.power;
         }
         return 0;
     }

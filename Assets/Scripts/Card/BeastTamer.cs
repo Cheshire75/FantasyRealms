@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class BeastTamer : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            bonus += eachAttrib(hand, "Beast") * 9;
-            deletePenalty(hand, "Beast");
-            return power + bonus;
+            bonus += eachAttrib(card.hand, "Beast") * 9;
+            deletePenalty(card.hand, "Beast");
+            return card.power + bonus;
         }
         else
         {

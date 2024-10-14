@@ -4,16 +4,27 @@ using UnityEngine;
 
 public class Swamp : Effect
 {
+    [SerializeField]
+    public List<string> penaltyAttrib = new List<string>();
+    void Start()
+    {
+        penaltyAttrib.Add("Army");
+        penaltyAttrib.Add("Fire");
+    }
     public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
     {
+
         int bonus = 0;
         if (isAvailable)
         {
             if (isPenalty)
             {
-                bonus -= eachAttrib(hand, "Army") * 3;
-                bonus -= eachAttrib(hand, "Fire") * 3;
+                foreach (var i in penaltyAttrib)
+                {
+                    bonus -= eachAttrib(hand, i) * 3;
+                }
             }
+            return power + bonus;
         }
         return 0;
     }

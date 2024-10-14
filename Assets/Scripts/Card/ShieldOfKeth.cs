@@ -17,6 +17,7 @@ public class ShieldOfKeth : Effect
             {
                 bonus = 40;
             }
+            return bonus + power;
         }
         return 0;
     }

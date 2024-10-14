@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class BellTower : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            if (isThereAttrib(hand, "Wizard"))
+            if (isThereAttrib(card.hand, "Wizard"))
             {
                 bonus = 15;
             }
-            return bonus + power;
+            return bonus + card.power;
         }
         else
         {

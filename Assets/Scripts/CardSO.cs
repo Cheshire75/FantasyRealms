@@ -111,8 +111,6 @@ public class Card
     public bool isPenalty;
     public GameObject prefab;
     public Hand hand;
-
-
 }
 
 [CreateAssetMenu(fileName = "CardSO", menuName = "ScriptableObject/CardSO")]
