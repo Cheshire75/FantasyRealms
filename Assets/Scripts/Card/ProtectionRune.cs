@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class ProtectionRune : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            foreach (var i in hand.container)
+            foreach (var i in card.hand.container)
             {
                 i.isPenalty = false;
             }
-            return power + bonus;
+            return card.power + bonus;
         }
         return 0;
     }

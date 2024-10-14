@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class SwordOfKeth : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            if (isThereAttrib(hand, "Leader"))
+            if (isThereAttrib(card.hand, "Leader"))
             {
                 bonus = 10;
-                if (isThereName(hand, "ShieldOfKeth"))
+                if (isThereName(card.hand, "ShieldOfKeth"))
                 {
                     bonus = 40;
                 }
             }
-            return bonus + power;
+            return bonus + card.power;
         }
         return 0;
     }

@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class Warship : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
-        int bonus = 0;
-        if (isPenalty)
+        if (card.isPenalty)
         {
-            if (!isThereAttrib(hand, "Water"))
+            if (!isThereAttrib(card.hand, "Water"))
             {
-                isAvailable = false;
-                foreach (var i in hand.container)
-                {
-                    if (i.cardName == "Warship")
-                    {
-                        i.isAvailable = false;
-                    }
-                }
+                card.isAvailable = false;
             }
         }
-        if (isAvailable)
+        if (card.isAvailable)
         {
+            foreach (var i in card.hand.container)
+            {
+                if (i.attrib == "Water")
+                {
+                    GameObject.Find(i.cardName).GetComponent<Effect>().penaltyAttrib.Remove("Army");
+                }
+            }
+            return card.power;
         }
         return 0;
     }

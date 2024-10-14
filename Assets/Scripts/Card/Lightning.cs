@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Lightning : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            if (isThereName(hand, "Rainstorm"))
+            if (isThereName(card.hand, "Rainstorm"))
             {
                 bonus = 30;
             }
-            return bonus + power;
+            return bonus + card.power;
         }
         return 0;
     }

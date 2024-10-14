@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class Unicorn : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            if (isThereName(hand, "Empress") || isThereName(hand, "Queen") || isThereName(hand, "Enchantress"))
+            if (isThereName(card.hand, "Empress") || isThereName(card.hand, "Queen") || isThereName(card.hand, "Enchantress"))
             {
                 bonus = 15;
             }
-            if (isThereName(hand, "Princess"))
+            if (isThereName(card.hand, "Princess"))
             {
                 bonus = 30;
             }
-            return power + bonus;
+            return card.power + bonus;
         }
         return 0;
     }

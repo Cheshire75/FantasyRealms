@@ -11,20 +11,20 @@ public class Swamp : Effect
         penaltyAttrib.Add("Army");
         penaltyAttrib.Add("Fire");
     }
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
 
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            if (isPenalty)
+            if (card.isPenalty)
             {
                 foreach (var i in penaltyAttrib)
                 {
-                    bonus -= eachAttrib(hand, i) * 3;
+                    bonus -= eachAttrib(card.hand, i) * 3;
                 }
             }
-            return power + bonus;
+            return card.power + bonus;
         }
         return 0;
     }

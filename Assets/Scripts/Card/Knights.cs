@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class Knights : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            if (isPenalty)
+            if (card.isPenalty)
             {
-                if (!isThereAttrib(hand, "Leader"))
+                if (!isThereAttrib(card.hand, "Leader"))
                 {
                     bonus = -8;
                 }
             }
-            return bonus + power;
+            return bonus + card.power;
         }
         return 0;
     }

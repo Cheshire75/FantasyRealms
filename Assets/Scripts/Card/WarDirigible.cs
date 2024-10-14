@@ -4,26 +4,19 @@ using UnityEngine;
 
 public class WarDirigible : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isPenalty)
+        if (card.isPenalty)
         {
-            if (!isThereAttrib(hand, "Army") || isThereAttrib(hand, "Weather"))
+            if (!isThereAttrib(card.hand, "Army") || isThereAttrib(card.hand, "Weather"))
             {
-                isAvailable = false;
-                foreach (var i in hand.container)
-                {
-                    if (i.cardName == "WarDirigible")
-                    {
-                        i.isAvailable = false;
-                    }
-                }
+                card.isAvailable = false;
             }
         }
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            return bonus + power;
+            return bonus + card.power;
         }
         return 0;
     }

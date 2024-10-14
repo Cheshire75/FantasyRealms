@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class DwarfFootmen : Effect
 {
-    public List<string> penaltyAttrib = new List<string>();
     void Start()
     {
         penaltyAttrib.Add("Army");

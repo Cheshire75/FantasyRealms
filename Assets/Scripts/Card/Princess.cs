@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Princess : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            bonus += eachAttrib(hand, "Army") * 8;
-            bonus += eachAttrib(hand, "Wizard") * 8;
-            bonus += (eachAttrib(hand, "Leader") - 1) * 8;
-            return bonus + power;
+            int cnt = eachAttrib(card.hand, "Army") + eachAttrib(card.hand, "Wizard") + eachAttrib(card.hand, "Leader");
+            if (card.attrib == "Leader") cnt--;
+            bonus = cnt * 8;
+            return bonus + card.power;
         }
         return 0;
     }

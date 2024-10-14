@@ -8,7 +8,7 @@ public class Necromancer : Effect
     {
         hand.container.Add(card);
     }
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
         if (isAvailable)

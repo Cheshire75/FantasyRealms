@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Smoke : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            if (isPenalty)
+            if (card.isPenalty)
             {
-                if (isThereAttrib(hand, "Fire"))
+                if (isThereAttrib(card.hand, "Fire"))
                 {
-                    foreach (var i in hand.container)
+                    foreach (var i in card.hand.container)
                     {
                         if (i.cardName == "Smoke")
                         {
@@ -23,7 +23,7 @@ public class Smoke : Effect
                     }
                 }
             }
-            return bonus + power;
+            return bonus + card.power;
         }
         return 0;
     }

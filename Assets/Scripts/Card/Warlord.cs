@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class Warlord : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            foreach (var i in hand.container)
+            foreach (var i in card.hand.container)
             {
                 if (i.isAvailable && i.attrib == "Army")
                 {
                     bonus += i.power;
                 }
             }
-            return power + bonus;
+            return card.power + bonus;
         }
         return 0;
     }

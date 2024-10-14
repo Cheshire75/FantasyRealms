@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Warhorse : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            if (isThereAttrib(hand, "Leader") || isThereAttrib(hand, "Wizard"))
+            if (isThereAttrib(card.hand, "Leader") || isThereAttrib(card.hand, "Wizard"))
             {
                 bonus = 14;
             }
-            return power + bonus;
+            return card.power + bonus;
         }
         return 0;
     }

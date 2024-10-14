@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class Effect : MonoBehaviour
 {
+    public List<string> penaltyAttrib = new List<string>();
     protected bool isThereAttrib(Hand hand, string _attrib)
     {
         foreach (var i in hand.container)

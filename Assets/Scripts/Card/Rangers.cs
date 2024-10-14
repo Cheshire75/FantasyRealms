@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Rangers : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            bonus += eachAttrib(hand, "Earth");
-            exclude(hand, "Army");
-            return bonus + power;
+            bonus += eachAttrib(card.hand, "Earth");
+            exclude(card.hand, "Army");
+            return bonus + card.power;
         }
         return 0;
     }

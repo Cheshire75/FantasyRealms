@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Queen : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            int cnt = eachAttrib(hand, "Army");
-            if (isThereName(hand, "King"))
+            int cnt = eachAttrib(card.hand, "Army");
+            if (isThereName(card.hand, "King"))
             {
                 bonus = cnt * 20;
             }
@@ -18,7 +18,7 @@ public class Queen : Effect
             {
                 bonus = cnt * 5;
             }
-            return power + bonus;
+            return card.power + bonus;
         }
         return 0;
     }

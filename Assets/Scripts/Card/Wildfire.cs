@@ -4,22 +4,29 @@ using UnityEngine;
 
 public class Wildfire : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    void Start()
     {
-        if (isAvailable)
+        penaltyAttrib.Add("Army");
+        penaltyAttrib.Add("Earth");
+        penaltyAttrib.Add("Water");
+        penaltyAttrib.Add("Unknown");
+        penaltyAttrib.Add("Beast");
+        penaltyAttrib.Add("Leader");
+    }
+    public int score(Card card)
+    {
+        if (card.isAvailable)
         {
-            unavailableAttrib(hand, "Army");
-            unavailableAttrib(hand, "Earth");
-            unavailableAttrib(hand, "Water");
-            unavailableAttrib(hand, "Unknown");
-            unavailableAttrib(hand, "Beast");
-            unavailableAttrib(hand, "Leader");
-            availableName(hand, "Mountain");
-            availableName(hand, "GreatFlood");
-            availableName(hand, "Island");
-            availableName(hand, "Dragon");
-            availableName(hand, "Unicorn");
-            return power;
+            foreach (var i in penaltyAttrib)
+            {
+                unavailableAttrib(card.hand, i);
+            }
+            availableName(card.hand, "Mountain");
+            availableName(card.hand, "GreatFlood");
+            availableName(card.hand, "Island");
+            availableName(card.hand, "Dragon");
+            availableName(card.hand, "Unicorn");
+            return card.power;
         }
         return 0;
     }

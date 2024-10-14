@@ -13,13 +13,13 @@ public class SpringOfLife : Effect
         if (card.attrib == "Weather") return true;
         return false;
     }
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
             int max = 0;
-            foreach (var i in hand.container)
+            foreach (var i in card.hand.container)
             {
                 if (isThere(i))
                 {
@@ -27,7 +27,7 @@ public class SpringOfLife : Effect
                 }
             }
             bonus = max;
-            return bonus + power;
+            return bonus + card.power;
         }
         return 0;
     }

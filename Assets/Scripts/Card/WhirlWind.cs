@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class Whirlwind : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            if (isThereName(hand, "Rainstorm"))
+            if (isThereName(card.hand, "Rainstorm"))
             {
-                if (isThereName(hand, "Blizzard") || isThereName(hand, "GreatFlood"))
+                if (isThereName(card.hand, "Blizzard") || isThereName(card.hand, "GreatFlood"))
                 {
                     bonus = 40;
                 }
             }
-            return bonus + power;
+            return bonus + card.power;
         }
         return 0;
     }

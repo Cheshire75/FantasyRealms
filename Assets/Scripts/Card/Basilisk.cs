@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Basilisk : Effect
 {
-    public List<string> penaltyAttrib = new List<string>();
     /// <summary>
     /// Start is called on the frame when a script is enabled just before
     /// any of the Update methods is called the first time.
