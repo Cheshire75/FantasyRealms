@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Hydra : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            if (isThereName(hand, "Swamp"))
+            if (isThereName(card.hand, "Swamp"))
             {
                 bonus = 28;
             }
-            return power + bonus;
+            return card.power + bonus;
         }
         return 0;
     }

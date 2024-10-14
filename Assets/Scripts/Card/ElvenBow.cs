@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class ElvenBow : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            if (isThereName(hand, "ElfArcher") || isThereName(hand, "Warlord") || isThereName(hand, "BeastTamer"))
+            if (isThereName(card.hand, "ElfArcher") || isThereName(card.hand, "Warlord") || isThereName(card.hand, "BeastTamer"))
             {
                 bonus = 30;
             }
-            return bonus + power;
+            return bonus + card.power;
         }
         return 0;
     }

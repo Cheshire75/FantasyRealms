@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Forge : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            bonus += eachAttrib(hand, "Weapon") * 9;
-            bonus += eachAttrib(hand, "Artifact") * 9;
-            return bonus + power;
+            bonus += eachAttrib(card.hand, "Weapon") * 9;
+            bonus += eachAttrib(card.hand, "Artifact") * 9;
+            return bonus + card.power;
         }
         return 0;
     }

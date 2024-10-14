@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Enchantress : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            bonus += eachAttrib(hand, "Earth") * 5;
-            bonus += eachAttrib(hand, "Weather") * 5;
-            bonus += eachAttrib(hand, "Water") * 5;
-            bonus += eachAttrib(hand, "Fire") * 5;
-            return bonus + power;
+            bonus += eachAttrib(card.hand, "Earth") * 5;
+            bonus += eachAttrib(card.hand, "Weather") * 5;
+            bonus += eachAttrib(card.hand, "Water") * 5;
+            bonus += eachAttrib(card.hand, "Fire") * 5;
+            return bonus + card.power;
         }
         return 0;
     }

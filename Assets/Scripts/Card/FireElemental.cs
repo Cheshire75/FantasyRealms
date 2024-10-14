@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class FireElemental : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            bonus += (eachAttrib(hand, "Fire") - 1) * 15;
-            return power + bonus;
+            int cnt = eachAttrib(card.hand, "Fire");
+            if (card.attrib == "Fire") cnt--;
+            bonus += cnt * 15;
+            return card.power + bonus;
         }
         return 0;
     }

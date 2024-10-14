@@ -12,18 +12,18 @@ public class GreatFlood : Effect
         penaltyAttrib.Add("Earth");
         penaltyAttrib.Add("Fire");
     }
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
-        if (isAvailable)
+        if (card.isAvailable)
         {
             foreach (var i in penaltyAttrib)
             {
-                unavailableAttrib(hand, i);
+                unavailableAttrib(card.hand, i);
             }
 
-            availableName(hand, "Mountain");
-            availableName(hand, "Lightning");
-            return power;
+            availableName(card.hand, "Mountain");
+            availableName(card.hand, "Lightning");
+            return card.power;
         }
         return 0;
     }

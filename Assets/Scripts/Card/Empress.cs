@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class Empress : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            bonus += eachAttrib(hand, "Army") * 10;
-            if (isPenalty)
+            bonus += eachAttrib(card.hand, "Army") * 10;
+            if (card.isPenalty)
             {
-                bonus -= (eachAttrib(hand, "Leader") - 1) * 5;
+                int cnt = eachAttrib(card.hand, "Leader");
+                if (card.attrib == "Leader") cnt--;
+                bonus += cnt * -5;
             }
-            return bonus + power;
+            return bonus + card.power;
         }
         return 0;
     }

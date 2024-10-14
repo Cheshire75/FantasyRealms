@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class Forest : Effect
 {
-    public int score(Hand hand, int power, bool isAvailable, bool isPenalty)
+    public int score(Card card)
     {
         int bonus = 0;
-        if (isAvailable)
+        if (card.isAvailable)
         {
-            bonus += eachAttrib(hand, "Beast") * 12;
-            if (isThereName(hand, "ElfArcher"))
+            bonus += eachAttrib(card.hand, "Beast") * 12;
+            if (isThereName(card.hand, "ElfArcher"))
             {
                 bonus += 12;
             }
-            return bonus + power;
+            return bonus + card.power;
         }
         return 0;
     }
