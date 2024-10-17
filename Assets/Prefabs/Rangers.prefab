@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5312571814894950326}
+  - component: {fileID: 674646245060929438}
   m_Layer: 6
   m_Name: Rangers
   m_TagString: Untagged
@@ -36,6 +37,19 @@ Transform:
   - {fileID: 2960448458340037223}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &674646245060929438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4602584797866727604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae44bca4c2f11494bad33c2039fd0a6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  penaltyAttrib: []
 --- !u!1 &4613518121476002570
 GameObject:
   m_ObjectHideFlags: 0
