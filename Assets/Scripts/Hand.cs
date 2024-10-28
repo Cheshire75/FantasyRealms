@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using DG.Tweening;
 
 public class Hand : Container
 {
@@ -21,7 +22,7 @@ public class Hand : Container
         Debug.Log("Deck Count:" + deck.container.Count + "\nHand Count:" + container.Count + "\n");
         for (int i = container.Count; i < 7; i++)
         {
-            receive(deck.send(Random.Range(0, deck.container.Count - 1)));
+            draw();
         }
     }
 
@@ -29,13 +30,17 @@ public class Hand : Container
     {
         Card tmp = deck.send(Random.Range(0, deck.container.Count - 1));
         tmp.hand = this;
-        tmp.prefab = Resources.Load<GameObject>("Prefabs/" + tmp.cardName);
         receive(tmp);
+        GameObject DrawingCard = Instantiate(tmp.prefab, deck.GetComponent<Transform>().position, Quaternion.identity);
+        DrawingCard.transform.DOMove(new Vector3((float)(-7 + 2 * (container.Count - 1)), -3, 0), (float)0.5);
+
     }
 
     public void discard(int num)
     {
+
         field.receive(send(num));
+
     }
 
     public void calScore()
