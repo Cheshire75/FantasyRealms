@@ -197,7 +197,7 @@ Transform:
   m_GameObject: {fileID: 1684535624936684176}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.42, y: 8.41, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -571,6 +571,7 @@ GameObject:
   - component: {fileID: 4535484258726199070}
   - component: {fileID: 5083409922093351593}
   - component: {fileID: 3053644998913579887}
+  - component: {fileID: 3376190313212264941}
   m_Layer: 6
   m_Name: Point
   m_TagString: Untagged
@@ -731,3 +732,11 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 5083409922093351593}
   m_maskType: 0
+--- !u!222 &3376190313212264941
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6036247010643588513}
+  m_CullTransparentMesh: 1

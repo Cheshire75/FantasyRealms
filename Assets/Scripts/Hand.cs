@@ -11,6 +11,7 @@ public class Hand : Container
     public int score;
     public int playerNumber;
     public Field field;
+    public GameObject UI;
 
     public Hand()
     {
@@ -67,6 +68,17 @@ public class Hand : Container
         else if (Input.GetKeyDown(KeyCode.W))
         {
             draw();
+        }
+        else if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (UI.activeSelf)
+            {
+                UI.SetActive(false);
+            }
+            else
+            {
+                CardSelector.spread(UI, container);
+            }
         }
     }
 }

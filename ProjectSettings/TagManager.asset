@@ -44,24 +44,6 @@ TagManager:
   - name: Filed
     uniqueID: 1980146497
     locked: 0
-  - name: CardInHand1
+  - name: Selector
     uniqueID: 3267785831
-    locked: 0
-  - name: CardInHand2
-    uniqueID: 2086725629
-    locked: 0
-  - name: CardInHand3
-    uniqueID: 1885191861
-    locked: 0
-  - name: CardInHand4
-    uniqueID: 4273228673
-    locked: 0
-  - name: CardInHand5
-    uniqueID: 269025979
-    locked: 0
-  - name: CardInHand6
-    uniqueID: 2387316247
-    locked: 0
-  - name: CardInHand7
-    uniqueID: 989091043
     locked: 0
